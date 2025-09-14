@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Floricultura Online</h1>
+        
+        <div class="produtos-section">
+            <h2>Produtos Disponíveis</h2>
+            <div class="produtos-container" id="produtos-lista"></div>
+        </div>
+
+        <div class="cliente-section">
+            <h2>Dados do Cliente</h2>
+            <form id="cliente-form">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="cpf" placeholder="CPF" required>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                <input type="text" id="codigo_desconto" placeholder="Código de Desconto (opcional)">
+                <button type="submit">Criar Pedido</button>
+            </form>
+        </div>
+
+        <div class="pedido-section">
+            <h2>Pedido Atual</h2>
+            <div id="pedido-detalhes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
